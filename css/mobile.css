@@ -1,0 +1,117 @@
+/* Navigation */
+
+#navbar-main .social {
+    display: none;
+}
+
+#navbar-main .container {
+    grid-template-columns: 1fr;
+    grid-gap: 1.2rem;
+}
+
+#navbar-main ul,
+#navbar-main .logo   {
+    justify-self: center;
+}
+
+
+#navbar-main ul li a.current{
+    background: var(--primary-color);
+    color: #fff; 
+    padding: .75rem;
+    font-size: .9rem;
+}
+
+#navbar-main .logo{
+    width:17    0px; 
+}
+
+#showcase .showcase-container .showcase-content h1 {
+    line-height: 2rem;
+}
+
+#showcase .showcase-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center; 
+}
+
+#home-article .articles-container  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#home-article .articles-container > *:first-child,
+#home-article .articles-container > *:last-child {
+    grid-template-columns: 1fr;
+    grid-column: 1;
+}
+
+#home-article .articles-container > *:last-child {
+    grid-column: 1;
+}
+
+
+@media(max-width:600px) {
+    #home-article .articles-container  {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+      
+ #main-footer .footer-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4 1fr);
+}
+
+#main-footer .footer-container >*:last-child {
+    grid-column: 1;
+}
+
+#main-footer .footer-container >*:first-child,
+#main-footer .footer-container >*:nth-child(2) {
+    border-bottom: #444 dotted 1px;
+    padding-bottom: 1rem;  
+}
+
+/* #main-footer .footer-container >* {
+    border-bottom: #444 dotted 1px;
+    padding-bottom: 1rem;
+}
+
+#main-footer .footer-container >*:last-child,
+#main-footer .footer-container >*:nth-child(3)
+ain-footer .footer-container >*:nth-child(4)
+ {
+    border: none;
+}*/
+
+/* About */
+.page-container {
+    grid-template-columns: 1fr;
+}
+/* Inner Pages */
+
+#about .page-container h1 {
+    font-size: 1.4rem;
+}
+.meta {
+    padding: .7rem;
+    padding-bottom: -.9rem;
+    font-size: .8rem;
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+.meta .category {
+    margin-top: .8rem;
+    text-align: center;
+}
+
+.page-container > *:first-child {
+    grid-row: 1;
+}
+
+} 
+
