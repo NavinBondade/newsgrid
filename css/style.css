@@ -270,9 +270,9 @@ p {
 }
 
 #home-article .articles-container > *:first-child,
-#home-article .articles-container > *:last-child
+#home-article .articles-container > *:last-child,
 #sports-article .articles-container > *:first-child,
-#sports-article .articles-container > *:last-child{
+#sports-article .articles-container > *:last-child {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
